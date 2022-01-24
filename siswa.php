@@ -111,7 +111,7 @@ if (isset($_GET['toggle_modal'])) {
                         <?php if ($_SESSION['id_jabatan'] !== '3') : ?>
                           <td>
                             <!-- Button trigger modal -->
-                            <a href="ubah_siswa.php?id_siswa=<?= $ds['id_siswa']; ?>" class="badge badge-success" data-toggle="modal" data-target="#editSiswa<?= $ds['id_siswa']; ?>">
+                            <a href="ubah_siswa.php?id_siswa=<?= $ds['id_siswa']; ?>" class="badge badge-success mb-2" data-toggle="modal" data-target="#editSiswa<?= $ds['id_siswa']; ?>">
                               <i class="fas fa-fw fa-edit"></i> Ubah
                             </a>
                             <a data-nama="<?= $ds['nama_siswa']; ?>" class="btn-delete badge badge-danger" href="hapus_siswa.php?id_siswa=<?= $ds['id_siswa']; ?>"><i class="fas fa-fw fa-trash"></i> Hapus</a>

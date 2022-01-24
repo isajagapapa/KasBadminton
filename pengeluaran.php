@@ -112,7 +112,7 @@ if (isset($_POST['btnEditPengeluaran'])) {
                         <td>Rp. <?= number_format($dp['jumlah_pengeluaran']); ?></td>
                         <?php if ($_SESSION['id_jabatan'] !== '3') : ?>
                           <td>
-                            <a href="" class="badge badge-success" data-toggle="modal" data-target="#editPengeluaranModal<?= $dp['id_pengeluaran']; ?>"><i class="fas fa-fw fa-edit"></i> Ubah</a>
+                            <a href="" class="badge badge-success mb-2" data-toggle="modal" data-target="#editPengeluaranModal<?= $dp['id_pengeluaran']; ?>"><i class="fas fa-fw fa-edit"></i> Ubah</a>
                             <div class="modal fade text-left" id="editPengeluaranModal<?= $dp['id_pengeluaran']; ?>" tabindex="-1" role="dialog" aria-labelledby="editPengeluaranModalLabel<?= $dp['id_pengeluaran']; ?>" aria-hidden="true">
                               <div class="modal-dialog" role="document">
                                 <form method="post">

@@ -103,44 +103,7 @@ if (isset($_POST['btnEditPengeluaran'])) {
                                                 <td><?= $dp['username']; ?></td>
                                                 <td><?= $dp['keterangan']; ?></td>
                                                 <td><?= date("d-m-Y, H:i:s", $dp['tanggal_pengeluaran']); ?></td>
-                                                <td>Rp. <?= number_format($dp['jumlah_pengeluaran']); ?></td>
-                                                <?php if ($_SESSION['id_jabatan'] !== '3') : ?>
-                                                    <td>
-                                                        <a href="" class="badge badge-success" data-toggle="modal" data-target="#editPengeluaranModal<?= $dp['id_pengeluaran']; ?>"><i class="fas fa-fw fa-edit"></i> Ubah</a>
-                                                        <div class="modal fade text-left" id="editPengeluaranModal<?= $dp['id_pengeluaran']; ?>" tabindex="-1" role="dialog" aria-labelledby="editPengeluaranModalLabel<?= $dp['id_pengeluaran']; ?>" aria-hidden="true">
-                                                            <div class="modal-dialog" role="document">
-                                                                <form method="post">
-                                                                    <input type="hidden" name="id_pengeluaran" value="<?= $dp['id_pengeluaran']; ?>">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <h5 class="modal-title" id="editPengeluaranModalLabel<?= $dp['id_pengeluaran']; ?>">Ubah Pengeluaran</h5>
-                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                                <span aria-hidden="true">&times;</span>
-                                                                            </button>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            <div class="form-group">
-                                                                                <label for="jumlah_pengeluaran<?= $dp['id_pengeluaran']; ?>">Jumlah Pengeluaran</label>
-                                                                                <input type="number" name="jumlah_pengeluaran" id="jumlah_pengeluaran<?= $dp['id_pengeluaran']; ?>" required class="form-control" placeholder="Rp." value="<?= $dp['jumlah_pengeluaran']; ?>">
-                                                                            </div>
-                                                                            <div class="form-group">
-                                                                                <label for="keterangan<?= $dp['id_pengeluaran']; ?>">Keterangan</label>
-                                                                                <textarea name="keterangan" id="keterangan<?= $dp['id_pengeluaran']; ?>" required class="form-control"><?= $dp['keterangan']; ?></textarea>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-fw fa-times"></i> Close</button>
-                                                                            <button type="submit" name="btnEditPengeluaran" class="btn btn-primary"><i class="fas fa-fw fa-save"></i> Save</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <?php if ($_SESSION['id_jabatan'] == '1') : ?>
-                                                            <a href="hapus_pengeluaran.php?id_pengeluaran=<?= $dp['id_pengeluaran']; ?>" class="badge badge-danger btn-delete" data-nama="Pengeluaran : Rp. <?= number_format($dp['jumlah_pengeluaran']); ?> | <?= $dp['keterangan']; ?>"><i class="fas fa-fw fa-trash"></i> Hapus</a>
-                                                        <?php endif ?>
-                                                    </td>
-                                                <?php endif ?>
+                                                <td>Rp. <?= number_format($dp['jumlah_pengeluaran']); ?></td>                                                
                                             </tr>
                                         <?php endforeach ?>
                                     </tbody>
