@@ -50,6 +50,12 @@ $jml_uang_kas = $jml_uang_kas['jml_uang_kas'];
                         <p>Pengeluaran</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="about.php" class="nav-link">
+                        <i class="fas fa-sign-out-alt nav-icon"></i>
+                        <p>Tentang Pembuat</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
