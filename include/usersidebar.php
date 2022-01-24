@@ -52,7 +52,7 @@ $jml_uang_kas = $jml_uang_kas['jml_uang_kas'];
                 </li>
                 <li class="nav-item">
                     <a href="about.php" class="nav-link">
-                        <i class="fas fa-user-tie nav-icon"></i>
+                        <i class="fas fa-user nav-icon"></i>
                         <p>Tentang Pembuat</p>
                     </a>
                 </li>
