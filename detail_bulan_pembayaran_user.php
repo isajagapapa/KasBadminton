@@ -74,7 +74,7 @@ if (isset($_POST['btnTambahSiswa'])) {
                                     <tr>
                                         <td><?= $i++; ?></td>
                                         <td><?= ucwords(htmlspecialchars_decode($duk['nama_siswa'])); ?></td>
-                                        <?php if ($duk['minggu_ke_1'] == $duk['pembayaran_perminggu']) : ?>
+                                        <?php if ($duk['minggu_ke_1'] >= $duk['pembayaran_perminggu']) : ?>
                                             <td>
                                                 <button type="button" class="badge badge-success" style="border: none;">
                                                     <i class="fas fa-fw fa-check"></i> <?= number_format($duk['minggu_ke_1']); ?>
@@ -88,7 +88,7 @@ if (isset($_POST['btnTambahSiswa'])) {
                                             </td>
                                         <?php endif ?>
 
-                                        <?php if ($duk['minggu_ke_2'] == $duk['pembayaran_perminggu']) : ?>
+                                        <?php if ($duk['minggu_ke_2'] >= $duk['pembayaran_perminggu']) : ?>
                                             <td>
                                                 <button type="button" class="badge badge-success" style="border: none;">
                                                     <i class="fas fa-fw fa-check"></i> <?= number_format($duk['minggu_ke_2']); ?>
@@ -102,7 +102,7 @@ if (isset($_POST['btnTambahSiswa'])) {
                                             </td>
                                         <?php endif ?>
 
-                                        <?php if ($duk['minggu_ke_3'] == $duk['pembayaran_perminggu']) : ?>
+                                        <?php if ($duk['minggu_ke_3'] >= $duk['pembayaran_perminggu']) : ?>
                                             <td>
                                                 <button type="button" class="badge badge-success" style="border: none;">
                                                     <i class="fas fa-fw fa-check"></i> <?= number_format($duk['minggu_ke_3']); ?>
@@ -116,7 +116,7 @@ if (isset($_POST['btnTambahSiswa'])) {
                                             </td>
                                         <?php endif ?>
 
-                                        <?php if ($duk['minggu_ke_4'] == $duk['pembayaran_perminggu']) : ?>
+                                        <?php if ($duk['minggu_ke_4'] >= $duk['pembayaran_perminggu']) : ?>
                                             <td>
                                                 <button type="button" class="badge badge-success" style="border: none;">
                                                     <i class="fas fa-fw fa-check"></i> <?= number_format($duk['minggu_ke_4']); ?>
