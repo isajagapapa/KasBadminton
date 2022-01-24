@@ -138,25 +138,25 @@ if (isset($_POST['btnLaporanPengeluaran'])) {
 												<tr>
 													<td><?= $i++; ?></td>
 													<td><?= ucwords(htmlspecialchars_decode($ds['nama_siswa'])); ?></td>
-													<?php if ($ds['minggu_ke_1'] == $ds['pembayaran_perminggu']) : ?>
+													<?php if ($ds['minggu_ke_1'] >= $ds['pembayaran_perminggu']) : ?>
 														<td class="text-success"><?= number_format($ds['minggu_ke_1']); ?></td>
 													<?php else : ?>
 														<td class="text-danger"><?= number_format($ds['minggu_ke_1']); ?></td>
 													<?php endif ?>
 
-													<?php if ($ds['minggu_ke_2'] == $ds['pembayaran_perminggu']) : ?>
+													<?php if ($ds['minggu_ke_2'] >= $ds['pembayaran_perminggu']) : ?>
 														<td class="text-success"><?= number_format($ds['minggu_ke_2']); ?></td>
 													<?php else : ?>
 														<td class="text-danger"><?= number_format($ds['minggu_ke_2']); ?></td>
 													<?php endif ?>
 
-													<?php if ($ds['minggu_ke_3'] == $ds['pembayaran_perminggu']) : ?>
+													<?php if ($ds['minggu_ke_3'] >= $ds['pembayaran_perminggu']) : ?>
 														<td class="text-success"><?= number_format($ds['minggu_ke_3']); ?></td>
 													<?php else : ?>
 														<td class="text-danger"><?= number_format($ds['minggu_ke_3']); ?></td>
 													<?php endif ?>
 
-													<?php if ($ds['minggu_ke_4'] == $ds['pembayaran_perminggu']) : ?>
+													<?php if ($ds['minggu_ke_4'] >= $ds['pembayaran_perminggu']) : ?>
 														<td class="text-success"><?= number_format($ds['minggu_ke_4']); ?></td>
 													<?php else : ?>
 														<td class="text-danger"><?= number_format($ds['minggu_ke_4']); ?></td>
