@@ -34,6 +34,14 @@
                     </div>
                 </div>
             </div>
+
+            <div class="container-fluid text-center">
+                <h1 class="text-center mt-3">
+                    HELLO
+                </h1>
+                <h5>Website ini dibuat atas kegabutan saya :)</h5>
+                <h6>Temukan saya di media sosial dengan menekan foto di atas.</h6>
+            </div>
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
