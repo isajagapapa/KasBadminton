@@ -64,7 +64,7 @@ $jml_uang_kas = $jml_uang_kas['jml_uang_kas'];
                                 <div class="card shadow">
                                     <div class="card-body">
                                         <h5><i class="fas fa-fw fa-users"></i> User</h5>
-                                        <h6 class="text-muted">Jumlah Anggota: <?= $jml_user; ?></h6>
+                                        <h6 class="text-muted">Jumlah User: <?= $jml_user; ?></h6>
                                         <a href="user.php" class="btn btn-info"><i class="fas fa-fw fa-align-justify"></i></a>
                                     </div>
                                 </div>
@@ -73,8 +73,8 @@ $jml_uang_kas = $jml_uang_kas['jml_uang_kas'];
                         <div class="col-lg-3">
                             <div class="card shadow">
                                 <div class="card-body">
-                                    <h5><i class="fas fa-fw fa-user-tie"></i> Peserta</h5>
-                                    <h6 class="text-muted">Jumlah Peserta: <?= $jml_siswa; ?></h6>
+                                    <h5><i class="fas fa-fw fa-user-tie"></i> Anggota</h5>
+                                    <h6 class="text-muted">Jumlah Anggota: <?= $jml_siswa; ?></h6>
                                     <a href="siswa.php" class="btn btn-info"><i class="fas fa-fw fa-align-justify"></i></a>
                                 </div>
                             </div>
