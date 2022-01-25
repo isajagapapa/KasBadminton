@@ -42,38 +42,7 @@ if (isset($_POST['btnEditPengeluaran'])) {
                         <div class="col-sm">
                             <h1 class="m-0 text-dark">Pengeluaran</h1>
                         </div><!-- /.col -->
-                        <div class="col-sm text-right">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#tambahPengeluaranModal"><i class="fas fa-fw fa-plus"></i> Tambah Pengeluaran</button>
-                            <!-- Modal -->
-                            <div class="modal fade text-left" id="tambahPengeluaranModal" tabindex="-1" role="dialog" aria-labelledby="tambahPengeluaranModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <form method="post">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="tambahPengeluaranModalLabel">Tambah Pengeluaran</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="form-group">
-                                                    <label for="jumlah_pengeluaran">Jumlah Pengeluaran</label>
-                                                    <input type="number" name="jumlah_pengeluaran" id="jumlah_pengeluaran" required class="form-control" placeholder="Rp.">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="keterangan">Keterangan</label>
-                                                    <textarea name="keterangan" id="keterangan" required class="form-control"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-fw fa-times"></i> Close</button>
-                                                <button type="submit" name="btnAddPengeluaran" class="btn btn-primary"><i class="fas fa-fw fa-save"></i> Save</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
